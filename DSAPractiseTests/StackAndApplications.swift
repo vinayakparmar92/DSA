@@ -110,8 +110,8 @@ class StackAndApplications: XCTestCase {
         }
     }
     
-    // Converting InfixToPostfix expressions us ing Stacks
-    func getPostfixFromInfix(infixExpression: String) -> String{
+    // Converting InfixToPostfix expressions using Stacks
+    func getPostfixFromInfix(infixExpression: String) -> String {
         let expressionsStack = Stack<Character>()
         var result = ""
         

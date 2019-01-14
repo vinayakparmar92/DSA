@@ -518,7 +518,6 @@ class TreesAndApplications: XCTestCase {
                 self.hd = hd
             }
         }
-    
         
         let queue = Queue<TreeNodeQueueObj>(capacity: 15)
         var horizontalDistance = [Int: Int]()

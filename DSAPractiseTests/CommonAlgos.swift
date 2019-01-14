@@ -283,6 +283,45 @@ class CommonAlgos: XCTestCase {
             }
         }
     }
+    
+    func testAllPermutationsOfString() {
+        
+        func printPermutationsOf(str: String) {
+            // Handle edge cases
+            if str.isEmpty {
+                return
+            }
+            
+            
+            
+            
+        }
+        
+        printPermutationsOf(str: "vinayak")
+        printPermutationsOf(str: "")
+        printPermutationsOf(str: "65432")
+        printPermutationsOf(str: "01")
+        printPermutationsOf(str: "0101")
+    }
+    
+    func testStringToNumber() {
+        
+    }
+    
+    func stringToNumber(number: String, mutiplierPower: Int, result: Int) -> Int {
+        if number.count == 0 {
+            return result
+        } else {
+            
+            let multiplier = 10 ^ mutiplierPower
+            let digit = number[multiplier]
+            let resultTemp = result + multiplier * digit
+            
+            return stringToNumber(number: ,
+                    mutiplierPower:,
+                    result:)
+        }
+    }
 }
 
 protocol Pizza {

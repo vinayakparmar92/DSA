@@ -8,7 +8,7 @@
 
 import XCTest
 
-class Queue<T: Initable> {
+private class Queue<T: Initable> {
     private var elements = [T]()
     var front = 0
     var rear = 0

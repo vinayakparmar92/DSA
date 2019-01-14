@@ -238,8 +238,12 @@ class SortingAlgos: XCTestCase {
                                        rightIndex: rightIndex,
                                        pivotElement: pivotElement)
             
-            quickSort(elements: &elements, leftIndex: leftIndex, rightIndex: pivotIndex - 1)
-            quickSort(elements: &elements, leftIndex: pivotIndex + 1, rightIndex: rightIndex)
+            quickSort(elements: &elements,
+                      leftIndex: leftIndex,
+                      rightIndex: pivotIndex - 1)
+            quickSort(elements: &elements,
+                      leftIndex: pivotIndex + 1,
+                      rightIndex: rightIndex)
         }
     }
     

@@ -20,22 +20,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.register(UINib.init(nibName: "TMPTVC",
                                       bundle: nil),
                            forCellReuseIdentifier: "temp")
+        
+        let queue1 = DispatchQueue.global()
+        let queue2 = DispatchQueue.global()
+        let queue3 = DispatchQueue.main
+        let queue4 = DispatchQueue.global()
+        let queue9 = DispatchQueue.global(qos: DispatchQoS(qosClass: DispatchQoS.QoSClass.default,
+                                                           relativePriority: 100).qosClass)
+        let queue10 = DispatchQueue.global(qos: DispatchQoS(qosClass: DispatchQoS.QoSClass.default,
+                                                           relativePriority: 10).qosClass)
+        let queue5 = DispatchQueue.global(qos: DispatchQoS.QoSClass.background)
+        let queue6 = DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
+        let queue7 = DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated)
+        let queue8 = DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-//        let sema = DispatchSemaphore.init(value: 3)
-//
-//        for index in 0..<15 {
-//            print("Sema Value before wait")
-//            sema.wait()
-//            print("Sema Value after wait")
-//            DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + 3) {
-//                print("BLABLA \(index)")
-//                sema.signal()
-//            }
-//        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

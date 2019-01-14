@@ -15,7 +15,8 @@ class GraphPractice: XCTestCase {
     let edges = 6
     
     override func setUp() {
-        graph = Graph(vertices: vertices, edgesCount: edges)
+        graph = Graph(vertices: vertices,
+                      edgesCount: edges)
         
         graph.addEdgeFrom(source: 0, destination: 2)
         graph.addEdgeFrom(source: 0, destination: 1)

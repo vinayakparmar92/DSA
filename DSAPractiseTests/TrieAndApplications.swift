@@ -82,9 +82,7 @@ class Trie {
 }
 
 class TrieAndApplications: XCTestCase {
-
     var trie: Trie?
-    
     
     override func setUp() {
         trie = Trie()
@@ -97,8 +95,6 @@ class TrieAndApplications: XCTestCase {
         trie?.insert(key: "kenny")
         trie?.insert(key: "kane")
         trie?.insert(key: "ken")
-        
-        "".firstIndex(of: <#T##Character#>)
     }
     
     func testSearchingInContactsWithTrie() {
